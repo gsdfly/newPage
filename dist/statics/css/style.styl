@@ -1,0 +1,117 @@
+@import "variable.styl"
+*
+  margin 0
+  padding 0
+body
+  font-family "Microsoft YaHei","Microsoft Sans Serif",Arial
+.container
+  margin 0 auto
+  padding $padding 0
+  width 1100px
+.fl
+  float left
+.fr
+  float right
+.logo
+  img
+    width auto
+    padding $padding
+.phone
+  padding $padding
+  line-height 56px
+  color #8f8f8f
+  img
+    vertical-align middle
+    margin-right ($margin/2)
+.banner
+  img
+    width 100%
+    max-width 1920px
+h3
+  font-size 22px
+  text-align center
+  padding ($padding *2)
+a
+  text-decoration initial
+ul,li
+  list-style none
+.footer
+  background #f0efef
+  text-align center
+  line-height 2
+  a
+    color $fontColor
+  .wxcode
+    width auto
+.introduce
+  text-align center
+  img
+    width auto
+.about
+  background #f0efef
+  padding $padding
+  ul
+    display flex
+    .about_left
+      flex 1
+    .about_right
+      padding $padding
+      flex 3
+      line-height 2
+      margin-left $margin
+.authorization
+  text-align center
+  img
+    text-align center
+@media screen and (max-width 768px)
+  .container
+    margin 0 auto
+    padding $padding 0
+    width 700px
+  .introduce
+    img
+      width 96%
+  .authorization
+    img
+      width 96%
+  .about
+    ul
+      display inherit
+      .about_left
+        flex inherit
+        text-align center
+        img
+          width 300px
+      .about_right
+        flex inherit
+        line-height inherit
+        padding $padding 0
+        font-size 1rem
+@media screen and (max-width 640px)
+  .container
+    margin 0 auto
+    padding $padding 0
+    width 320px
+  .logo
+    img
+      width 100px
+  .phone
+    line-height 32px
+  .authorization
+    img
+      max-width 320px
+  .introduce
+    img
+      width 96%
+  .about
+    ul
+      display inherit
+      .about_left
+        flex inherit
+        img
+          width 300px
+      .about_right
+        flex inherit
+        line-height inherit
+        padding $padding 0
+        font-size .7rem

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>我抓CatchMe后台系统</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    #main {
+      width: 100%;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <iframe id="main" src="https://weimaqi.net/admin_mch/login.aspx" frameborder="0"></iframe>
+  <script type="text/javascript">
+    var clientHeight = document.documentElement.clientHeight,
+      oMain = document.getElementById('main');
+    oMain.style.height = clientHeight + 'px';
+  </script>
+</body>
+
+</html>
